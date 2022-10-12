@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:osb="http://www.openswatchbook.org/uri/2009/osb"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="600"
+   height="600"
+   viewBox="0 0 600.00001 600.00001"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="logoAgro4.svg"
+   inkscape:export-filename="G:\CURSOS\HTML\LOGOS\LogoAgroRegistros 2.png"
+   inkscape:export-xdpi="363.02521"
+   inkscape:export-ydpi="363.02521">
+  <defs
+     id="defs4">
+    <linearGradient
+       id="linearGradient4189"
+       osb:paint="solid">
+      <stop
+         style="stop-color:#336633;stop-opacity:1;"
+         offset="0"
+         id="stop4191" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient4141"
+       osb:paint="gradient">
+      <stop
+         style="stop-color:#060614;stop-opacity:1;"
+         offset="0"
+         id="stop4143" />
+      <stop
+         style="stop-color:#000000;stop-opacity:0;"
+         offset="1"
+         id="stop4145" />
+    </linearGradient>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.99230649"
+     inkscape:cx="-3.8711078"
+     inkscape:cy="246.19092"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer5"
+     showgrid="true"
+     units="px"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1">
+    <inkscape:grid
+       type="xygrid"
+       id="grid3336" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="Contenedor"
+     style="display:inline">
+    <circle
+       style="display:inline;fill:none;fill-rule:nonzero;stroke:#99561b;stroke-width:14.97459412;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path4152"
+       cx="299.49612"
+       cy="300.50388"
+       r="289.50882"
+       inkscape:export-xdpi="363.64111"
+       inkscape:export-ydpi="363.64111" />
+    <ellipse
+       style="fill:#336633;fill-opacity:1;stroke:#532200;stroke-width:1.13677907;stroke-opacity:1"
+       id="path4187"
+       cx="301.43411"
+       cy="299.88382"
+       rx="283.69135"
+       ry="284.69907" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer5"
+     inkscape:label="Texto"
+     style="display:inline">
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot4218"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;display:inline;fill:#cccc33;fill-opacity:1;fill-rule:nonzero;stroke:#cccc33;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
+       transform="matrix(1.0147055,-1.1654092,1.1446,1.0331533,-180.56117,487.88307)"
+       inkscape:export-xdpi="363.64111"
+       inkscape:export-ydpi="363.64111"><flowRegion
+         id="flowRegion4220"><rect
+           id="rect4222"
+           width="560"
+           height="50"
+           x="150"
+           y="80"
+           style="fill:#cccc33;fill-rule:nonzero;stroke:#cccc33;stroke-opacity:1;fill-opacity:1;" /></flowRegion><flowPara
+         id="flowPara4224">AgroRegistros</flowPara></flowRoot>  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer4"
+     inkscape:label="Logo"
+     style="display:inline">
+    <path
+       style="fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#cccc33;stroke-width:28.99037552;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 122.22378,475.65428 307.09532,-352.73375 19.19346,0 -307.09532,352.73375 z"
+       id="path4157"
+       inkscape:connector-curvature="0"
+       inkscape:export-xdpi="363.64111"
+       inkscape:export-ydpi="363.64111" />
+    <path
+       style="fill:#cccc33;fill-opacity:1;fill-rule:nonzero;stroke:#cccc33;stroke-width:17.2326355;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 478.24592,245.39556 -18.6296,0 0,-127.917 18.6296,0 z"
+       id="path4159"
+       inkscape:connector-curvature="0"
+       inkscape:export-xdpi="363.64111"
+       inkscape:export-ydpi="363.64111" />
+    <path
+       style="display:inline;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#cccc33;stroke-width:35;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 334.42219,250.12333 c 18.89966,52.15646 67.2607,35.84418 134.20555,0"
+       id="path4163"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc"
+       inkscape:export-xdpi="363.64111"
+       inkscape:export-ydpi="363.64111" />
+    <path
+       style="display:inline;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#cccc33;stroke-width:35;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 390,283.5867 C 562.00908,273.2476 207.13652,545.9074 461.42517,458.62233"
+       id="path4167"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc"
+       inkscape:export-xdpi="363.64111"
+       inkscape:export-ydpi="363.64111" />
+    <path
+       style="display:inline;fill:#cccc33;fill-opacity:1;fill-rule:nonzero;stroke:#cccc33;stroke-width:1.15708065px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 426.31806,365.21125 c 1.68097,11.74096 13.32014,10.28252 32.55031,3.29143 -47.3657,24.06349 -50.13154,35.44209 -66.84128,51.44443"
+       id="path4185"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccc"
+       inkscape:export-xdpi="363.64111"
+       inkscape:export-ydpi="363.64111" />
+    <path
+       style="display:inline;fill:#cccc33;fill-opacity:1;fill-rule:nonzero;stroke:#cccc33;stroke-width:18;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 460,469.31117 20,0 0,-40 -20,0 z"
+       id="path4165"
+       inkscape:connector-curvature="0"
+       inkscape:export-xdpi="363.64111"
+       inkscape:export-ydpi="363.64111" />
+  </g>
+</svg>
