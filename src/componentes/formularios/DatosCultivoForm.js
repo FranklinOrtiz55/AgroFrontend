@@ -15,7 +15,7 @@ import Container from "@mui/material/Container";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 //import { Link } from "react-router-dom";
 import { UserContext } from "../UserContext";
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { Footer } from "../pantallas/Footer";
 import { Autocomplete } from "@mui/material";
 //import {SelectCertificacion} from '../formularios';
@@ -52,6 +52,13 @@ export const DatosCultivoForm = () => {
     getOptionLabel: (option) => option.title,
   };
 
+  useEffect(() => {
+    
+  console.log ("valor del cltivo en datos cultivo form ", cultivo);
+ 
+  }, [cultivo])
+  
+
   return (
     <ThemeProvider theme={theme}>
       <Container component="main" maxWidth="xs">
@@ -80,6 +87,7 @@ export const DatosCultivoForm = () => {
                   id="cultivoName"
                   label="Nombre Cultivo"
                   autoFocus
+                  //value={cultivo.nombreCultivo}
                   value={cultivo.nombreCultivo}
                   onChange={handleInputChange}
                 />

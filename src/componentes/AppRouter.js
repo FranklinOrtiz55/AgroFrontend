@@ -45,12 +45,12 @@ export const AppRouter = () => {
         <NavBarProductor /> */}
         <NavBarY/>
 
-    {/* {!estaRegistrado.loguin? <NavBar/> : <NavBarProductor/>}      {/* si esta registrado muestra el NavBar del productor, sino el de inicio */} 
-     {console.log (estaRegistrado.loguin)}
-     {console.log(estaRegistrado.nombreUsuario)}
+    {/* {!estaRegistrado.loguin? <NavBar/> : <NavBarProductor/>*/}      {/* si esta registrado muestra el NavBar del productor, sino el de inicio */} 
+     {/*console.log (estaRegistrado.loguin)*/}
+     {/*console.log(estaRegistrado.nombreUsuario)*/}
     {/* {console.log(estaRegistrado.rolesUsuario.includes("Productor"))}    */}
-    {console.log(estaRegistrado.rolesUsuario)}    
-    {console.log("results = ", results)}    
+    {/*console.log(estaRegistrado.rolesUsuario)*/}    
+    {/*console.log("results = ", results)*/}    
 
         <Routes>
           <Route exact path="/extraccion" element={<ExtraccionScreen />} />

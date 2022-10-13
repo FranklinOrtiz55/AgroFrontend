@@ -1,5 +1,26 @@
 import { NavBarProductor } from "../NavBarProductor"
+import {
+  BrowserRouter as Router,
+  Routes,
+  Navigate,
+  Route,
+} from "react-router-dom";
 
+import { SignIn } from "./Ingresar";
+import {
+  RegistroScreen,
+  HomeScreen,
+  SuelosScreen,
+  DensidadScreen,
+  ExtraccionScreen,
+  ProductoGeneralScreen,
+  ProductorDatosScreen,
+  DatosperScreen,
+  InventarioScreen,
+  DatosCultivoScreen,
+  DatosLotesScreen,
+  LaboresScreen,
+} from "./pantallas";
 
 export const ProductorRoutes = () => {
   return (

@@ -13,10 +13,11 @@ import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { DatosCultivoForm, CertificacionesForm, UbicacionForm} from "../formularios";
 import { DatosLotesScreen } from "./DatosLotesScreen";
 import { UserContext } from "../UserContext";
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { Footer } from "./Footer";
 import Axios from "axios";
 import Swal from "sweetalert2";
+import { agroApi } from "../../api";
 
 //import Review from './Review';
 
@@ -57,7 +58,7 @@ const theme = createTheme();
 export const DatosCultivoScreen = () => {
   const [activeStep, setActiveStep] = React.useState(0);
 
-  const { cultivo, setCultivo, errores, setErrores } = useContext(UserContext); // importo useContext para tener el valor de los datos del producto
+  const { cultivo, setCultivo, errores, setErrores, estaRegistrado } = useContext(UserContext); // importo useContext para tener el valor de los datos del producto
 
   //producto.productoTipo
 
@@ -206,6 +207,123 @@ export const DatosCultivoScreen = () => {
     //ProductoGeneralScreen();
     window.location.reload();
   };
+
+
+
+
+  const getDatos = async () => {
+    agroApi.get('/cultivo/datosCultivo',  {
+      params: {
+        userId : estaRegistrado.id,
+      }
+    })
+    .then(function (response) {
+      // handle success
+      //const {data = []} = response.data;                // cuando se utiliza asi, se guarda en cultivo dentro de un array, por lo cual se debe buscar la infoamcion con cultivo[0].
+      const {data} = response.data;
+      console.log("data datos cultivo= ", data);                // muestra los datos extraidos de la respuesta
+      //setOpciones(data);
+      //setCultivo(data);
+      console.log("response datos cultivo= ", response);          // muestra los datos de la respuesta
+      console.log("variable cultivo= ", cultivo);          // muestra los datos almacenados en la variable cultivo.
+      console.log("data datos cultivo= ", data);                // muestra los datos extraidos de la respuesta
+
+     
+
+        setCultivo({...cultivo, 
+        nombreCultivo: data[0].nombreCultivo || " ",
+        valuenombreCultivo: data[0].valuenombreCultivo || " ",
+        nombreCertificacion: data[0].nombreCertificacion || [],
+        valuePais: data[0].valuePais || { title: " ", id: " " },
+        pais: data[0].pais || " ",
+        valueDepartamento: data[0].valueDepartamento || { title: " ", id: " " },
+        departamento: data[0].departamento || " ",
+        valueMunicipio: data[0].valueMunicipio || { title: " ", id: " " },
+        municipio: data[0].municipio ||" ",
+        corregimiento: data[0].corregimiento || " ",
+        valueCultivoTipoProducto: data[0].valueCultivoTipoProducto || { title: " ", id: " " },
+        tipoProducto: data[0].tipoProducto || " ",
+        valueCultivoLotes: data[0].valueCultivoLotes || { title: " ", id: " " },
+        cantidadLotes: data[0].cantidadLotes|| "Cinco",
+        
+        
+        nombreLote1: data[0].nombreLote1 || " ",
+        cantidadArbolesLote1: data[0].cantidadArbolesLote1 || 0,
+        fechaLote1: data[0].fechaLote1|| Date.now(),
+        distanciaArbolesLote1: data[0].distanciaArbolesLote1 || 0,
+        distanciaSurcosLote1: data[0].distanciaSurcosLote1 || 0,
+        valueCultivoTipoTrazoLote1: data[0].valueCultivoTipoTrazoLote1 || { title: " ", id: " " },
+        tipoTrazoLote1: data[0].tipoTrazoLote1 || " ",
+    
+        nombreLote2: data[0].nombreLote2 || " ",
+        cantidadArbolesLote2: data[0].cantidadArbolesLote2 || 0,
+        fechaLote2: data[0].fechaLote2 || Date.now(),
+        distanciaArbolesLote2: data[0].distanciaArbolesLote2 || 0,
+        distanciaSurcosLote2: data[0].distanciaSurcosLote2 || 0,
+        valueCultivoTipoTrazoLote2: data[0].valueCultivoTipoTrazoLote2 || { title: " ", id: " " },
+        tipoTrazoLote2: data[0].tipoTrazoLote2 || " ",
+    
+        nombreLote3: data[0].nombreLote3 || " ",
+        cantidadArbolesLote3: data[0].cantidadArbolesLote3 || 0,
+        fechaLote3: data[0].fechaLote3 || Date.now(),
+        distanciaArbolesLote3: data[0].distanciaArbolesLote3 || 0,
+        distanciaSurcosLote3: data[0].distanciaSurcosLote3 || 0,
+        valueCultivoTipoTrazoLote3: data[0].valueCultivoTipoTrazoLote3 || { title: " ", id: " " },
+        tipoTrazoLote3: data[0].tipoTrazoLote3 || " ",
+        
+       
+ 
+        nombreLote4: data[0].nombreLote4 || " ",
+        cantidadArbolesLote4: data[0].cantidadArbolesLote4 || 0,
+        fechaLote4: data[0].fechaLote4 || Date.now(),
+        distanciaArbolesLote4: data[0].distanciaArbolesLote4 || 0,
+        distanciaSurcosLote4: data[0].distanciaSurcosLote4 || 0,
+        valueCultivoTipoTrazoLote4: data[0].valueCultivoTipoTrazoLote4 || { title: " ", id: " " },
+        tipoTrazoLote4: data[0].tipoTrazoLote4 || " ",
+        
+       
+        nombreLote5: data[0].nombreLote5 || " ",
+        cantidadArbolesLote5: data[0].cantidadArbolesLote5 || 0,
+        fechaLote5: data[0].fechaLote5 || Date.now(),
+        distanciaArbolesLote5: data[0].distanciaArbolesLote5 || 0,
+        distanciaSurcosLote5: data[0].distanciaSurcosLote5 || 0,
+        valueCultivoTipoTrazoLote5: data[0].valueCultivoTipoTrazoLote5 || { title: " ", id: " " },
+        tipoTrazoLote5: data[0].tipoTrazoLote5 || " ",
+        }); 
+
+
+
+
+      console.log("variable cultivo 2= ", cultivo);          // muestra los datos almacenados en la variable cultivo.
+
+
+    })
+    .catch(function (error) {
+      // handle error
+      console.log(error);
+    })
+    .then(function () {
+      // always executed
+      console.log("variable cultivo 2= ", cultivo);          // muestara los datos almacenados en la variable cultivo.
+      
+    });
+    console.log("variable cultivo ultima= ", cultivo);          // muestara los datos almacenados en la variable cultivo.
+
+  }
+
+
+
+
+
+
+  useEffect(() => {
+    const respu = getDatos();
+
+  console.log("respu = ", respu);
+
+}, []);       //   agregado para que muestre el valor actualizado del cultivo
+
+
 
   return (
     <ThemeProvider theme={theme}>
