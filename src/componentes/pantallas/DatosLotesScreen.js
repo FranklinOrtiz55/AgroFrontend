@@ -226,7 +226,9 @@ export const DatosLotesScreen = () => {
       confirmButtonText: "Listo",
     }).then((result) => {
       if (result.isConfirmed) {
-        window.location.reload(); // para iniciar nuevamente con otro producto del inventario.
+        //window.location.reload(); // para iniciar nuevamente con otro producto del inventario.
+        //{<SignIn />}
+        window.location.replace("/")    // papa que lo lleve al menu de inicio
       }
     });
   };

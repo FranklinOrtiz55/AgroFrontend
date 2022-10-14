@@ -228,7 +228,7 @@ export const DatosCultivoScreen = () => {
       console.log("variable cultivo= ", cultivo);          // muestra los datos almacenados en la variable cultivo.
       console.log("data datos cultivo= ", data);                // muestra los datos extraidos de la respuesta
 
-     
+       //setCultivo({...cultivo, cultivo:data[0]})
 
         setCultivo({...cultivo, 
         nombreCultivo: data[0].nombreCultivo || " ",
