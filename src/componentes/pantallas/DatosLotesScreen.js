@@ -66,7 +66,7 @@ export const DatosLotesScreen = () => {
   let pasos2 = [];
   
 
-  const { cultivo, setCultivo, errores, setErrores , estaRegistrado } = useContext(UserContext); // importo useContext para tener el valor de los datos del producto
+  const { cultivo, setCultivo, errores, setErrores , estaRegistrado, setEstaRegistrado } = useContext(UserContext); // importo useContext para tener el valor de los datos del producto
 
  // setPasos(cultivo.cantidadLotes)
 
@@ -219,6 +219,9 @@ export const DatosLotesScreen = () => {
     //const respuesta = await Axios.post('http://localhost:4000/api', {Fecha:Date.now, TipoProducto:[NuevoProducto.productoTipo, NuevoProducto.productoTipo2], NombreComercial:NuevoProducto.nombreComercial, IngredienteActivo: NuevoProducto.ingredienteActivo, Concentracio: NuevoProducto.concentracion, NumeroRegistroIca:NuevoProducto.registroIca, PeriodoReingreso:NuevoProducto.periodoR, PeriodoCarencia:NuevoProducto.periodoC })
     // console.log (respuesta, tipoProducto)
     const mensaje = respuesta.data.mensaje;
+    if (mensaje){
+      setEstaRegistrado({...estaRegistrado, cultivo: true})   // cuando se crea el cultivo, se actualiza para saber que ya se tiene un cultivo.
+    }
     //alert (mensaje)
     Swal.fire({
       title: mensaje,

@@ -23,7 +23,8 @@ export const MainApp = () => {
     id:  "1234567890ab",
     loguin: false, 
     nombreUsuario: " ", 
-    token: null
+    token: null,
+    cultivo: false          // para saber si ya tiene registrado un cultivo.
   });
 
   useEffect(() => {

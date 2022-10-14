@@ -109,12 +109,13 @@ export const RolesForm = () => {
 
   const registrarse = async () => {
     const { nombre, apellido, correo, contrasena1 } = usuario;
+    const cultivo = false;
     //console.log(nombre, apellido, correo,  contrasena1);
 
     try {
       const respuesta = await Axios.post(
         "http://localhost:4000/api/auth/singup",
-        { fecha: new Date(), nombre, apellido, correo, contrasena1, roles }
+        { fecha: new Date(), nombre, apellido, correo, contrasena1, roles, cultivo }
       );
 
       const mensaje = respuesta.data.mensaje;

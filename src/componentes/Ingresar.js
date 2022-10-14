@@ -113,18 +113,19 @@ export const SignIn = () => {
     const respuesta = await agroApi.post("auth/singin", { correo, contrasena1 } ); // se llama la api con la configuracion de axios 
 
        const mensaje = respuesta.data.message;
-      const {userId, token, nombreUsuario, rolesUsuario} = respuesta.data;  // se desectructura la respuesta para obtener los valores
-            console.log("token all= ", token, nombreUsuario, rolesUsuario)
+      const {userId, token, nombreUsuario, rolesUsuario, cultivo} = respuesta.data;  // se desectructura la respuesta para obtener los valores
+            console.log("token all= ", token, nombreUsuario, rolesUsuario, cultivo)
             
             if (token) {
                                                                                           
-              setEstaRegistrado({id: userId, loguin: true, nombreUsuario: nombreUsuario, rolesUsuario: rolesUsuario, token: token}) // se graban los datos recibidos en un estado
-              console.log("token nombre = ", token.nombre);
+              setEstaRegistrado({id: userId, loguin: true, nombreUsuario: nombreUsuario, rolesUsuario: rolesUsuario, token: token, cultivo: cultivo}) // se graban los datos recibidos en un estado
+              
               localStorage.setItem("token", (token));
                                                                                         
               console.log(estaRegistrado.loguin);
               console.log(estaRegistrado.nombreUsuario);
               console.log(estaRegistrado.rolesUsuario);
+              console.log(estaRegistrado.cultivo);
               window.location.replace("/")
               } else console.log(mensaje);
               } catch (error) {

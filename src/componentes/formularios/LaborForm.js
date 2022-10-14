@@ -53,26 +53,6 @@ export default function LaborForm() {
     color: "#dc3545",
   };
 
-
-  
-                              /* 
-                                const getDatos = async () => {
-                                  try {
-                                  const url = "http://localhost:4000/api/productos/productosGenerales";
-                                    const resp = await fetch(url,{ headers: {
-                                      "Content-Type": "application/json",
-                                      Accept: "application/json"
-                                  }});
-
-                                    const {data = []} = await resp.json();
-                                    console.log("data = ", data);
-                                    setOpciones(data);
-                                  } catch (error) {
-                                    console.log(error);
-                                  }
-                                };
-                                */
-
                               
 
   const getDatos = async () => {
@@ -121,8 +101,9 @@ export default function LaborForm() {
       <Grid item xs={12} sm={6}>
         <TextField
           id="outlined-read-only-input"
-          label="Nombre del Cultivo"
-          defaultValue={labores.nombreCultivo}
+          label="Nombre del Cultivo 1"
+          //defaultValue={labores.nombreCultivo}
+          defaultValue={cultivo.nombreCultivo}      // para visualizar el nombre traido de la bd.
           InputProps={{
             readOnly: true,
           }}
